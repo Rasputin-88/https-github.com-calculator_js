@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <link rel="stylesheet" href="calc.css">
+</head>
+<body>
+
+        
+	<div class="box">
+        <h2>Шашлычный калькулятор</h2>
+        
+        <div class="range">
+            <H3>Сколько вас ?</H3>
+           <span id="rangeValue"></span>     
+           <input type="range"	value = "1" min="1" max="20" id="number1" step="1" />
+        </div>
+        <h3>Какое мясо жарим ?</h3>
+         <div class="checkboxWrap">
+            <label ><input type="checkbox" id = "chec1" oninput="myFunction1()" value = 'Свинина' name = "ball">Свинина</label>
+            <label><input type="checkbox" id = "chec2" oninput="myFunction2()" value = 'Говядина' name = "ball">Говядина</label>
+            <label><input type="checkbox" id = "chec3" oninput="myFunction3()" value = 'Баранина' name = "ball">Баранина</label>
+            <label><input type="checkbox" id = "chec4" oninput="myFunction4()" value = 'Курица' name = "ball">Курица</label>
+            <label><input type="checkbox" id = "chec5" oninput="myFunction5()" value = 'Овощи' name = "ball">Овощи</label>
+        </div>
+        <div class="range">
+            <h3>На солько вы голодны</h3>
+            
+            <span id="itemHunger"></span>     
+            <input type="range"	value = "1" min="1" max="3" id = "powerHunger" step="1" />
+        </div>
+        
+        <h3>Как долго планируем балдеть ?</h3>
+        <div class="radioBtnWrap">
+           <label><input type="radio" id="rad1"  name = "rad"/>мы быстро<br></label>
+           <label><input type="radio" id="rad2"  name = "rad"/>нормально посидим<br></label>
+           <label><input type="radio" id="rad3"  name = "rad"/>пока мангал не развалится<br></label> 
+        </div>
+        <h3>Ваш рецепт шашлычного балдежа</h3>
+
+       <button id="but">РАСЧИТАТЬ</button>
+
+        <div class = "res">
+            <span id="res"></span>
+        </div>
+        <div class="assorty">
+
+            <div class="svinina" style='display:none'  id = "l1">
+                <img class="svininaPhoto" name = 'img' src = './img/1.jpg' id = "Lp1"/>
+                <span id = "Ltext1" class="svininaText" ></span>
+                <span id = "help1" class="svininaText2" ></span>
+            </div>
+
+            <div class="svinina" style='display:none'  id = "l2">
+                <img class="svininaPhoto" name = 'img' src = './img/4.jpg' id = "Lp2"/>
+                <span id = "Ltext2" class="svininaText" ></span>
+                <span id = "help2" class="svininaText2" ></span>
+            </div>
+
+            <div class="svinina" style='display:none'  id = "l3">
+                <img class="svininaPhoto" name = 'img' src = './img/6.jpg' id = "Lp3"/>
+                <span id = "Ltext3" class="svininaText" ></span>
+                <span id = "help3" class="svininaText2" ></span>
+            </div>
+
+            <div class="svinina" style='display:none'  id = "l4">
+                <img class="svininaPhoto" name = 'img' src = './img/2.jpg' id = "Lp4"/>
+                <span id = "Ltext4" class="svininaText" ></span>
+                <span id = "help4" class="svininaText2" ></span>
+            </div>
+
+            <div class="svinina" style='display:none'  id = "l5">
+                <div class="img_cont">
+                    <img class="svininaPhoto" name = 'img' src = './img/5.jpg' id = "Lp5"/>                  
+                </div>
+                <div class="span_cont">`
+                    <span id = "Ltext5" class="svininaText" ></span>
+                    <span id = "help5" class="svininaText2" ></span>
+                </div>
+                
+            </div>
+ 
+        </div>
+    </div>
+
+
+    <!-- <script src = "./chdck.js"></script> -->
+	<!-- <script src = "./index.js"></script> -->
+    <script src = "./calc.js"></script>
+</body>
+</html>
